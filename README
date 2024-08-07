@@ -1,0 +1,26 @@
+# Danger Room
+
+## What is this?
+
+Inspired by DVWA, I wanted to take it one step further to help both developers and security personnel alike.<p>
+
+The goal of this repo is to create an intentionally vulnerable web application that is controlled entirely by flags sent at runtime.  Put another way, a user can send custom flags such as "--XSS" or "--IDOR", which alters the code and opens up a specific vulnerability inside of the application.<p>
+
+This serves two purposes:<p>
+
+First, more obviously it provides more or less a playground for aspiring offsec individuals to practice their skills on more specific vulnerabilities, with the assumption that only the desired vulnerability is exploitable.  This is done to mimic production applications that are typically already hardened.  In addition, it can provide as somewhat of a study guide for those who are looking to get into white box testing, as you should be able to grep the code to find what these vulnerabilities tend to look like in the wild.<p>
+
+Second, it should provide a roadmap to the development community that will shed light on where vulnerabilities can lie within a code base, and what steps one would need to take in order to close the vulnerability in the code.  This can be done by essentially using this code as a study guide, and maybe some sort of field manual on how to resolve specific vulnerabilities that may arise in their own projects.<p>
+
+As a side benefit, theoretically when the code is run with no flags, it should be the model of what a hardened app should aspire to be, containing no known bugs.  As such, the main reason this makes such a good public project, as it relies on the community to help both point out flaws, but also reveal any novel attacks that have not been previously found.  It is intended to be chainable, meaning multiple flags can be sent to the application to try to discover new attack vectors.<p>
+
+Time will tell how successful this is, but I believe it a way to give back to the open-source community.<p>
+
+My personal intent is to livecode on this repo on Twitch with my community, and as such, it may take some time to evolve into the full extent of my aspirations.  Please be patient, as I am still planning the ways to best accomplish these tasks.<p>
+
+Ideally I would prefer to have a collection of these "Danger Room" variations, that address different parts of a production app; client, server, database, pipeline, and one designed for the BEAM.  There is a potential for more variations as needed, but I would like to narrow the scope in the beginning.<p>
+
+It may also take some time for me to get around to building this app, as at the moment I have much more pressing issues, but I hope to start the livecoding process soon.<p>
+
+Sincerely,<p>
+Snake
